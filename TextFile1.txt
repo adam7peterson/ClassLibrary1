@@ -1,0 +1,13 @@
+﻿GIT yra versijų kontrolės sistema, kuri leidžia stebėti pakeitimus programinio kodo projektuose ir valdyti šių pakeitimų istoriją. Visual Studio yra integruota vystymo aplinka, kuri leidžia kurti programinio kodo projektus ir valdyti juos naudojant GIT.
+Norint naudoti GIT su GitHub, reikia:
+Sukurti naują GitHub saugyklą (repository).
+Prijungti Visual Studio projektą prie sukurtos saugyklos naudojant "Git Clone" funkciją. Tai leis atsisiųsti saugyklą į savo kompiuterį ir sukurti vietinę kopiją (local copy) projekto.
+Atlikti pakeitimus projekte ir naudoti "Git Commit" funkciją, kad patvirtintumėte savo pakeitimus.
+Naudoti "Git Push" funkciją, kad įkeltumėte patvirtintus pakeitimus į GitHub saugyklą ir sinchronizuotumėte vietinę kopiją su nuotolinės saugyklos (remote repository) versija.
+Kiekvieną kartą atnaujinant projektą, reikia sinchronizuoti vietinę kopiją su GitHub saugykla. Tai padaryti galima naudojant "Git Pull" funkciją, kuri atsisiųs naujausią GitHub versiją ir atnaujins vietinę kopiją.
+Visual Studio taip pat turi įvairias įrankių, kad būtų lengviau stebėti ir valdyti GIT projektų istoriją. Galite peržiūrėti pakeitimus, susijusius su kiekvienu "commit", atšaukti (revert) atliktus pakeitimus ir kt.
+Svarbu prisiminti, kad GIT yra gana galinga ir sudėtinga sistema, todėl rekomenduojama išmokti jos pagrindus, kad galėtumėte geriau valdyti savo projektų istoriją ir išvengti klaidų, pvz., atsitiktinio duomenų praradimo.
+Commit ir Push yra dvi skirtingos GIT komandos, kurios atliekamos tam, kad valdyti ir sinchronizuoti kodą tarp lokalaus ir nuotolinio GIT saugyklų (repository).
+Commit komanda reiškia, kad tu patvirtini (arba fiksuoji) savo pakeitimus (changes) vietiniame saugykloje. Kai paspaudi "Commit", GIT sugeneruoja naują "commit" objektą, kuris saugo tavo pakeitimus ir įtraukia juos į vietinę GIT istoriją. Ši komanda yra labai naudinga, kai dirbi vienas ir nori saugoti savo darbą.
+Push komanda, priešingai nei Commit, sinchronizuoja pakeitimus tarp vietinės ir nuotolinės GIT saugyklų. Kai paspaudi "Push", GIT siunčia tavo patvirtintus "commit" objektus į nuotolinę saugyklą. Tai leidžia kitiems projekto dalyviams matyti tavo pakeitimus ir juos įtraukti į savo vietinę kopiją (local copy) projekto.
+Galima sakyti, kad Commit yra lokalus veiksmas, kuris patvirtina tavo pakeitimus, o Push yra nuotolinis veiksmas, kuris siunčia tavo patvirtintus pakeitimus į nuotolinę saugyklą ir sinchronizuoja kodą tarp vietinės ir nuotolinės saugyklų. Be Push komandos, tavo pakeitimai nebus matomi kitų projekto dalyvių ir nebus saugomi nuotolinėje saugykloje.
